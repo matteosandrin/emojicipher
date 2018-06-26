@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>EmojiCipher</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="assets/css/crypto.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/vigenere.js"></script>
+
+  </head>
+  <body>
+
+    <div id="body" class="container">
+
+      <p class="text-center" id="crypto">CRYPTO</p>
+      <p class="text-center" id="description">The EmojiCipher</p>
+
+      <p>
+        <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+        <textarea id="input-area" class="form-control" rows="10" style="resize: none;"
+          placeholder="Input"></textarea>
+        </div>
+        <div class="col-md-5">
+          <textarea id="output-area" class="form-control" rows="10" style="resize: none;"
+            placeholder="Output"></textarea>
+        </div>
+        </div>
+      </p>
+
+      <p>
+        <div class="row">
+          <div class="form-group">
+
+            <div class="col-md-5 col-md-offset-1">
+              <input type="text" class="form-control"
+                id="key" placeholder="Keyword"></div>
+
+            <!--<div class="col-md-4">
+              <input type="text" class="form-control"
+                id="keyword2" placeholder="Keyword #2"></div>-->
+
+          </div>
+        </div>
+      </p>
+
+      <p>
+        <div class="row">
+          <div class="col-md-1 col-md-offset-1">
+            <button id="encrypt" type="button" class="btn btn-primary"
+              >Encrypt</button>
+          </div>
+          <div class="col-md-1 col-md-offset-1">
+            <button id="decrypt" type="button" class="btn btn-success"
+              >Decrypt</button>
+          </div>
+        </div>
+      </p>
+    </div>
+  </body>
+</html>
